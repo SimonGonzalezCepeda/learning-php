@@ -1,6 +1,5 @@
 <?php
 
-$greetings = "Hola";
-$name = "Sylver";
+$greeting = "Hola %_Get('name')!";
 
-echo $greetings . "" . $name . "!";
+require 'index-template.php';
