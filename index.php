@@ -3,4 +3,4 @@
 $greetings = "Hola";
 $name = "Sylver";
 
-echo $greetings . $name . "!";
+echo $greetings . "" . $name . "!";
