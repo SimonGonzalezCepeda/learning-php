@@ -15,11 +15,17 @@ foreach ($names as $z) {
 };
 
 $people = [
-  'Simón',
-  'González',
-  24,
-  1.81,
-  true
+  'name' => 'Simón',
+  'sn1' => 'González',
+  'sn2' => 'Cepeda',
+  'age' => 24,
+  'married' => no
 ];
+
+die('Xivato1');
+echo "NO ES VEURÁ";
+dd();
+var_dump($names);
+print_r($names);
 
 //require 'index-template.php';
