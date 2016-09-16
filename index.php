@@ -8,11 +8,11 @@ $names = [
   'Sergi',
   'Xavi',
   'Romeu'
-]
+];
 
 foreach ($names as $z) {
   echo "$z </br>";
-}
+};
 
 $people = [
   'Simón',
