@@ -5,21 +5,21 @@
 /* Arrais o vectors */
 
 $names = [
-  'Sergi',
-  'Xavi',
-  'Romeu'
+    'Sergi',
+    'Xavi',
+    'Romeu'
 ];
 
 foreach ($names as $z) {
-  echo "$z </br>";
+    echo "$z </br>";
 };
 
 $people = [
-  'name' => 'Simón',
-  'sn1' => 'González',
-  'sn2' => 'Cepeda',
-  'age' => 24,
-  'married' => true
+    'name' => 'Simón',
+    'sn1' => 'González',
+    'sn2' => 'Cepeda',
+    'age' => 24,
+    'married' => true
 ];
 
 // die('Xivato1');
@@ -28,4 +28,4 @@ $people = [
 // var_dump($names);
 // print_r($names);
 
-//require 'index-template.php';
+require 'index-template.php';
