@@ -8,7 +8,11 @@
   </head>
   <body>
     <h1>
-      <?= 'Hello' . htmlspecialchars($_Get['name'])?>
+      <ul>
+        <?php foreach ($names as $names): ?>
+          <li><?= $name ?></li>
+        <?php endforeach; ?>
+      </ul>
     </h1>
   </body>
 </html>
