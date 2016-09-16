@@ -1,5 +1,17 @@
 <?php
 
-$greeting = "Hola %_Get('name')!";
+//$greeting = "Hola". $_GET('name')."!";
 
-require 'index-template.php';
+/* Arrais o vectors */
+
+$names = [
+  'Sergi',
+  'Xavi',
+  'Romeu'
+]
+
+foreach ($names as $name) {
+  echo "$name </br>";
+}
+
+//require 'index-template.php';
