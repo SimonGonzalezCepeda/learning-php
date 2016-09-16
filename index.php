@@ -10,8 +10,16 @@ $names = [
   'Romeu'
 ]
 
-foreach ($names as $name) {
-  echo "$name </br>";
+foreach ($names as $z) {
+  echo "$z </br>";
 }
+
+$people = [
+  'Simón',
+  'González',
+  24,
+  1.81,
+  true
+];
 
 //require 'index-template.php';
