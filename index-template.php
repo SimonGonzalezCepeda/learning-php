@@ -9,8 +9,8 @@
   <body>
     <h1>
       <ul>
-        <?php foreach ($names as $names): ?>
-          <li><?= $name ?></li>
+        <?php foreach ($people as $feature => $featureValue): ?>
+          <li> <strong><?= $feature ?></strong> : <small><?= $featureValue ?></small> </li>
         <?php endforeach; ?>
       </ul>
     </h1>
