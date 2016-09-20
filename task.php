@@ -4,9 +4,12 @@ require 'functions.php';
 
 class Task {
 
-    public function __construct()
+    private $description;
+
+    public function __construct($description, $cheked)
     {
-        echo "Nova tasca construida";
+        $this->description = $description;
+//        echo "Nova tasca construida";
     }
 
 //    public function Task(){
@@ -14,6 +17,6 @@ class Task {
 //    }
 
 }
-$task = new Task;
+$task = new Task("Aprendre PHP");
 
 var_dump($task);
