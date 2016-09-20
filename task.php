@@ -20,9 +20,33 @@ class Task {
 //        echo "Nova tasca construida";
     }
 
-    public function completa($cheked)
+    public function complete()
     {
-        $cheked = true;
+        $this->checked = true;
+    }
+
+    /**Tipic Getter
+     * @return mixed
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**Tipic Setter
+     * @param mixed $description
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
+
+    public function description($description = null)
+    {
+        if($description === null){
+            return $this->description;
+        }
+        $this->description = $description;
     }
 
 //    public function Task(){
