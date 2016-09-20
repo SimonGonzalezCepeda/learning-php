@@ -1,5 +1,12 @@
 <?php
 
-require 'functions.php';
+require "task.php";
 
-require 'index-template.php';
+///POJO o POPO
+$task = new Task("Aprendre PHP", false);
+
+var_dump($task);
+
+//require 'functions.php';
+//
+//require 'index-template.php';
