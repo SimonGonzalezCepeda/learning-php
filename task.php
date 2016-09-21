@@ -17,7 +17,6 @@ class Task {
     {
         $this->description = $description;
         $this->checked = $cheked;
-//        echo "Nova tasca construida";
     }
 
     public function complete()
@@ -49,8 +48,5 @@ class Task {
         $this->description = $description;
     }
 
-//    public function Task(){
-//
-//    }
 
 }

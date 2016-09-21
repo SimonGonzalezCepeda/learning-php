@@ -8,7 +8,3 @@ $people = [
     $age => 24,
     $married => true
 ];
-
-var_dump();
-
-//require 'index-template.php';
