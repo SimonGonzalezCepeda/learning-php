@@ -1,16 +1,9 @@
 <?php
 
-$config = [
-    'dbtype'=> 'mysql',
-    'dbname' => 'prova',
-    'username' => 'root',
-    'password' => '',
-    'dbhost' => '127.0.0.1'
-];
 
 class Connection
 {
-    public static function make()
+    public static function make($config, $message)
     {
         try{
             $pdo = new PDO(
@@ -21,7 +14,7 @@ class Connection
                 $config['password']
             );
         } catch (PDOException $e) {
-            die("Hi ha hagut un error: " . $e->getMessage());
+            die($message . " " . $e->getMessage());
         };
     }
 }
