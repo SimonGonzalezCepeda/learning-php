@@ -1,18 +1,18 @@
 <?php
 
-require "task.php";
+require "controllers/task.php";
 
-require 'functions.php';
+require 'core/functions.php';
 
-require 'database/Connection.php';
+require 'core/database/Connection.php';
 
-require 'database/QueryBuilder.php';
+require 'core/database/QueryBuilder.php';
 
-$config = require 'config/database.php';
+$config = require 'core/config/database.php';
 
-$message = require 'config/message.php';
+$message = require 'core/config/message.php';
 
 ///POJO o POPO
 $task = new Task("Aprendre PHP", false);
 
-require 'index-template.php';
+require 'views/index-template.php';
