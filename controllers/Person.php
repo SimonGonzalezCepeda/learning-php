@@ -81,6 +81,4 @@ class Person
     {
         $this->sirname2 = $sirname2;
     }
-
-
 }
