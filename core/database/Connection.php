@@ -6,7 +6,7 @@ class Connection
     public static function make($config, $message)
     {
         try{
-            $pdo = new PDO(
+            return new PDO(
                 $config['dbtype'] . ':host=' .
                 $config['dbhost'] . ';dbname' .
                 $config['dbname'].
@@ -15,6 +15,6 @@ class Connection
             );
         } catch (PDOException $e) {
             die($message . " " . $e->getMessage());
-        };
+        }
     }
 }
