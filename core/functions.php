@@ -1,6 +1,5 @@
 <?php
 
-
 $people = [
     $name => 'Simón',
     $sn1 => 'González',
