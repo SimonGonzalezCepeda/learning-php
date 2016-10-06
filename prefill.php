@@ -20,14 +20,14 @@ $fields = [
 $values = [];
 
 $replacements = [
-    ':vendor\\\\:package_name\\\\' => function () use(&$values) { return str_replace('\\', '\\\\', $values['psr4_namespace']) . '\\\\'; },
-    ':author_name'                 => function () use(&$values) { return $values['author_name']; },
-    ':author_username'             => function () use(&$values) { return $values['author_github_username']; },
-    ':author_website'              => function () use(&$values) { return $values['author_website'] ?: ('https://github.com/' . $values['author_github_username']); },
-    ':author_email'                => function () use(&$values) { return $values['author_email'] ?: ($values['author_github_username'] . '@example.com'); },
-    ':vendor'                      => function () use(&$values) { return $values['package_vendor']; },
-    ':package_name'                => function () use(&$values) { return $values['package_name']; },
-    ':package_description'         => function () use(&$values) { return $values['package_description']; },
+    'SimonGonzalezCepeda\\\\learning-php\\\\' => function () use(&$values) { return str_replace('\\', '\\\\', $values['psr4_namespace']) . '\\\\'; },
+    'Simon Gonzalez Cepeda'                 => function () use(&$values) { return $values['author_name']; },
+    'SimonGonzalezCepeda'             => function () use(&$values) { return $values['author_github_username']; },
+    'http://www.sylvershine.com/'              => function () use(&$values) { return $values['author_website'] ?: ('https://github.com/' . $values['author_github_username']); },
+    'info@sylvershine.com'                => function () use(&$values) { return $values['author_email'] ?: ($values['author_github_username'] . '@example.com'); },
+    'SimonGonzalezCepeda'                      => function () use(&$values) { return $values['package_vendor']; },
+    'learning-php'                => function () use(&$values) { return $values['package_name']; },
+    "This package it's only used for learning and testing PHP, packages and projects with PHP"         => function () use(&$values) { return $values['package_description']; },
     'League\\Skeleton'             => function () use(&$values) { return $values['psr4_namespace']; },
 ];
 
