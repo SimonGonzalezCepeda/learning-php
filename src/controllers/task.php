@@ -1,5 +1,7 @@
 <?php
 
+namespace Learning\PHP;
+
 require 'functions.php';
 
 class Task {

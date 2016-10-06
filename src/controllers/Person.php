@@ -1,11 +1,7 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: sylver
- * Date: 20/09/16
- * Time: 18:26
- */
+namespace Learning\PHP;
+
 class Person
 {
     /**
